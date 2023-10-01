@@ -18,9 +18,9 @@ main proc
     mov msg1,al 
     
     mov ah,2
-    mov dl,10
+    mov dl,10     ; calling msg1
     int 21h
-    mov dl,13
+    mov dl,13     ; return carries
     int 21h
     
     mov ah,2
